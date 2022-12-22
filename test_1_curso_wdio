@@ -1,0 +1,9 @@
+describe('Opencart', () => {
+    it('Deberia agregar un artículo existente a al wish list', async () => {
+        await browser.url('/');
+        let barraDeBusqueda = await $('[name="search"]');
+        await barraDeBusqueda.setValue('nikon');
+        await barraDeBusqueda.keys('Enter');
+await assert.equal ($('.caption').getText(), 'Nikon D300');
+})
+})
